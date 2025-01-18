@@ -5,8 +5,8 @@ pipeline {
         stage('Run Python Script') {
             steps {
                 script {
-                    // Execute the existing Python script
-                    sh 'python3 hi.py' // Use 'python' if 'python3' is not available
+                    // Use 'bat' for Windows
+                    bat 'python hi.py'
                 }
             }
         }
